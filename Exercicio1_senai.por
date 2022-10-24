@@ -17,17 +17,23 @@ programa
 		
 		// codigo
 				//entrada
-		escreva("enforme a distancia que sera percorrida: ")
+		escreva("informe a distancia que sera percorrida: ")
 		leia(km)
 				//calculo de gosto de combustivel 
 		km_litro=km/autonomia_carro
 		arredonda_autonomia= mat.arredondar(km_litro, 2)
-		escreva("\nPara percorrer ",km, "KM serão necessários ",arredonda_autonomia," litro de combustivel")
+				
+		limpa()
+			
+				//saida Combustivel Necessario
+		escreva("\nPara percorrer ",km, "KM serão necessários ",arredonda_autonomia," litros de combustivel")
 		
 				//calculo de R$ gasto
 		valor_gasto=km/autonomia_carro*valor_combustivel
 		arredonda_gasto= mat.arredondar(valor_gasto, 2)
-		escreva("\nPara percorrer ",km,"KM serão gastos , R$",arredonda_gasto," em combustivel ")
+				
+				//Saida gosta de R$ por km
+		escreva("\nPara percorrer ",km,"KM serão gastos R$",arredonda_gasto," em combustivel ")
 	}
 }
 
@@ -36,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 335; 
+ * @POSICAO-CURSOR = 610; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
